@@ -378,11 +378,11 @@ const ProjectCard = ({ project }) => (
           </span>
         ))}
       </div>
-      <a
-        href="#"
-        className="inline-flex items-center text-accent hover:text-primary transition-colors">
+      <button
+        onClick={() => console.log(`View details for ${project.title}`)}
+        className="inline-flex items-center text-accent hover:text-primary transition-colors border-none bg-transparent cursor-pointer p-0">
         View Details <FiExternalLink className="ml-1" />
-      </a>
+      </button>
     </div>
   </motion.div>
 );

@@ -35,15 +35,7 @@ const staggerContainer = {
   },
 };
 
-const slideIn = {
-  hidden: { x: -60, opacity: 0 },
-  visible: {
-    x: 0,
-    opacity: 1,
-    transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] },
-  },
-};
-
+// Removing unused slideIn animation
 const textReveal = {
   hidden: { opacity: 0, y: 50 },
   visible: (custom) => ({

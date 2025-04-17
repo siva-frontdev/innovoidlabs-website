@@ -8,7 +8,6 @@ import {
   FiLayout,
   FiCloud,
   FiServer,
-  FiUsers,
   FiShield,
   FiActivity,
   FiDatabase,
