@@ -8,6 +8,8 @@ import {
   FiClock,
   FiCheckCircle,
 } from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa";
+import ContactMapImage from "../assets/images/stock/contact-map.svg";
 
 // Animation variants
 const fadeIn = {
@@ -92,14 +94,14 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us | Innovoid Labs</title>
+        <title>Contact Us | nnovoid labs</title>
         <meta
           name="description"
-          content="Get in touch with the Innovoid Labs team for your software development needs. We're here to help bring your digital vision to life."
+          content="Get in touch with the nnovoid labs team for your software development needs. We're here to help bring your digital vision to life."
         />
         <meta
           name="keywords"
-          content="contact Innovoid Labs, software development consultation, technology consultation, project inquiry"
+          content="contact nnovoid labs, software development consultation, technology consultation, project inquiry"
         />
       </Helmet>
 
@@ -151,9 +153,11 @@ const Contact = () => {
                       <div>
                         <h3 className="font-bold mb-1">Main Office</h3>
                         <p className="text-gray-700">
-                          123 Innovation Street, Tech Hub,
+                          99, Sri Ram Nagar,
                           <br />
-                          Silicon Valley, CA 94043
+                          Narasimhanaickenpalayam,
+                          <br />
+                          Coimbatore 641031, India
                         </p>
                       </div>
                     </div>
@@ -166,9 +170,27 @@ const Contact = () => {
                         <h3 className="font-bold mb-1">Phone</h3>
                         <p className="text-gray-700">
                           <a
-                            href="tel:+1234567890"
+                            href="tel:+919344853263"
                             className="hover:text-accent transition-colors">
-                            +1 (234) 567-890
+                            +91 9344 853 263
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start">
+                      <div className="text-green-600 text-xl mt-1 mr-4">
+                        <FaWhatsapp />
+                      </div>
+                      <div>
+                        <h3 className="font-bold mb-1">WhatsApp</h3>
+                        <p className="text-gray-700">
+                          <a
+                            href="https://wa.me/919344853263"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:text-green-600 transition-colors">
+                            +91 9344 853 263
                           </a>
                         </p>
                       </div>
@@ -182,9 +204,9 @@ const Contact = () => {
                         <h3 className="font-bold mb-1">Email</h3>
                         <p className="text-gray-700">
                           <a
-                            href="mailto:info@innovoidlabs.com"
+                            href="mailto:info@nnovoidlabs.com"
                             className="hover:text-accent transition-colors">
-                            info@innovoidlabs.com
+                            info@nnovoidlabs.com
                           </a>
                         </p>
                       </div>
@@ -199,7 +221,9 @@ const Contact = () => {
                         <p className="text-gray-700">
                           Monday - Friday: 9:00 AM - 6:00 PM
                           <br />
-                          Saturday & Sunday: Closed
+                          Saturday: 10:00 AM - 2:00 PM
+                          <br />
+                          Sunday: Closed
                         </p>
                       </div>
                     </div>
@@ -446,78 +470,37 @@ const Contact = () => {
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
               variants={fadeIn}>
-              <h2 className="heading-lg mb-4">Our Locations</h2>
+              <h2 className="heading-lg mb-4">Find Us</h2>
               <p className="text-gray-600 text-lg">
-                Visit us at one of our offices or reach out online from anywhere
-                in the world
+                Visit our office to discuss your project in person
               </p>
             </motion.div>
 
-            <div className="bg-white p-4 rounded-lg shadow-custom overflow-hidden">
-              <div className="aspect-w-16 aspect-h-9 h-96 bg-gray-200 rounded-lg relative">
-                <div className="absolute inset-0 flex items-center justify-center text-gray-400 text-lg">
-                  Interactive Map Will Be Displayed Here
-                </div>
-              </div>
-            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true, amount: 0.1 }}
+              className="rounded-xl overflow-hidden shadow-lg max-w-4xl mx-auto">
+              <img
+                src={ContactMapImage}
+                alt="nnovoid labs location map"
+                className="w-full h-auto"
+              />
+            </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-              <motion.div
-                className="bg-white p-6 rounded-lg shadow-custom"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.2 }}
-                variants={fadeIn}>
-                <h3 className="text-xl font-bold mb-3">Silicon Valley HQ</h3>
-                <p className="text-gray-700 mb-4">
-                  123 Innovation Street, Tech Hub,
-                  <br />
-                  Silicon Valley, CA 94043
-                </p>
-                <p className="text-gray-600">
-                  <strong>Phone:</strong> +1 (234) 567-890
-                  <br />
-                  <strong>Email:</strong> sv@innovoidlabs.com
-                </p>
-              </motion.div>
-
-              <motion.div
-                className="bg-white p-6 rounded-lg shadow-custom"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.2 }}
-                variants={fadeIn}>
-                <h3 className="text-xl font-bold mb-3">New York Office</h3>
-                <p className="text-gray-700 mb-4">
-                  456 Tech Avenue, Innovation Tower,
-                  <br />
-                  New York, NY 10001
-                </p>
-                <p className="text-gray-600">
-                  <strong>Phone:</strong> +1 (345) 678-901
-                  <br />
-                  <strong>Email:</strong> ny@innovoidlabs.com
-                </p>
-              </motion.div>
-
-              <motion.div
-                className="bg-white p-6 rounded-lg shadow-custom"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.2 }}
-                variants={fadeIn}>
-                <h3 className="text-xl font-bold mb-3">London Office</h3>
-                <p className="text-gray-700 mb-4">
-                  789 Digital Lane, Tech Park,
-                  <br />
-                  London, UK EC1A 1BB
-                </p>
-                <p className="text-gray-600">
-                  <strong>Phone:</strong> +44 20 1234 5678
-                  <br />
-                  <strong>Email:</strong> london@innovoidlabs.com
-                </p>
-              </motion.div>
+            <div className="text-center mt-6 max-w-3xl mx-auto">
+              <p className="text-gray-600">
+                99, Sri Ram Nagar, Narasimhanaickenpalayam, Coimbatore 641031,
+                India
+              </p>
+              <a
+                href="https://goo.gl/maps/YourGoogleMapsLink"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-4 px-6 py-2 bg-primary text-white rounded-full hover:bg-accent transition-colors">
+                Get Directions
+              </a>
             </div>
           </div>
         </section>
@@ -533,8 +516,7 @@ const Contact = () => {
               variants={fadeIn}>
               <h2 className="heading-lg mb-4">Frequently Asked Questions</h2>
               <p className="text-gray-600 text-lg">
-                Find quick answers to common questions about our services and
-                process
+                Find answers to common questions about our services and process
               </p>
             </motion.div>
 

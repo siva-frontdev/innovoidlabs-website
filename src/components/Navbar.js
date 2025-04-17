@@ -59,11 +59,11 @@ const Navbar = () => {
     }),
     hover: {
       y: -4,
-      transition: { 
-        duration: 0.3, 
+      transition: {
+        duration: 0.3,
         ease: "easeOut",
-        type: "spring", 
-        stiffness: 400 
+        type: "spring",
+        stiffness: 400,
       },
     },
   };
@@ -81,10 +81,10 @@ const Navbar = () => {
     hover: {
       scale: 1.07,
       filter: "brightness(1.1)",
-      transition: { 
-        duration: 0.4, 
-        type: "spring", 
-        stiffness: 300 
+      transition: {
+        duration: 0.4,
+        type: "spring",
+        stiffness: 300,
       },
     },
   };
@@ -101,35 +101,35 @@ const Navbar = () => {
   };
 
   const mobileMenuVariants = {
-    hidden: { 
-      opacity: 0, 
-      height: 0, 
+    hidden: {
+      opacity: 0,
+      height: 0,
       y: -20,
       transition: {
         duration: 0.3,
-        ease: "easeInOut"
-      }
+        ease: "easeInOut",
+      },
     },
-    visible: { 
-      opacity: 1, 
-      height: "auto", 
+    visible: {
+      opacity: 1,
+      height: "auto",
       y: 0,
       transition: {
         duration: 0.5,
         ease: [0.22, 1, 0.36, 1],
         staggerChildren: 0.1,
-        delayChildren: 0.1
-      }
+        delayChildren: 0.1,
+      },
     },
-    exit: { 
-      opacity: 0, 
-      height: 0, 
+    exit: {
+      opacity: 0,
+      height: 0,
       y: -10,
       transition: {
         duration: 0.3,
-        ease: "easeInOut"
-      }
-    }
+        ease: "easeInOut",
+      },
+    },
   };
 
   // Mobile menu item animation
@@ -144,13 +144,13 @@ const Navbar = () => {
         ease: [0.22, 1, 0.36, 1],
       },
     }),
-    exit: { 
-      opacity: 0, 
+    exit: {
+      opacity: 0,
       x: -10,
       transition: {
         duration: 0.2,
-      }
-    }
+      },
+    },
   };
 
   return (
@@ -166,33 +166,37 @@ const Navbar = () => {
         }`}>
         <div className="container mx-auto px-6 lg:px-8">
           <div className="flex justify-between items-center">
-            <motion.div 
-              variants={logoVariants} 
+            <motion.div
+              variants={logoVariants}
               whileHover="hover"
-              whileTap={{ scale: 0.98 }}
-            >
+              whileTap={{ scale: 0.98 }}>
               <Link to="/" className="flex items-center">
-                <span
-                  className={`text-2xl font-bold bg-clip-text text-transparent transition-all duration-300 ${
-                    scrolled
-                      ? "bg-gradient-to-r from-primary to-accent"
-                      : "bg-gradient-to-r from-white to-accent"
+                <div className="flex items-center gap-3">
+                  <motion.img
+                    src="/Innovoid-logo.jpg"
+                    alt="Innovoid Labs Logo" 
+                    className={`h-10 md:h-10 object-cover rounded-full ${
+                      scrolled ? "" : "filter brightness-150"
+                    }`}
+                    whileHover={{ scale: 1.05 }}
+                  />
+                  <span className={`font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r ${
+                    scrolled 
+                      ? "from-primary via-deepBlue to-midnight"
+                      : "from-white via-gray-200 to-gray-100"
                   }`}>
-                  Innovoid
-                  <span className={scrolled ? "text-primary" : "text-white"}>
-                    Labs
+                    nnovoid Labs
                   </span>
-                </span>
+                </div>
               </Link>
             </motion.div>
 
             {/* Desktop Navigation */}
-            <motion.div 
+            <motion.div
               className="hidden md:flex items-center space-x-6"
               variants={staggerContainer}
               initial="hidden"
-              animate="visible"
-            >
+              animate="visible">
               {navLinks.map((link, index) => (
                 <motion.div
                   key={link.name}
@@ -215,11 +219,14 @@ const Navbar = () => {
                       className={`absolute -bottom-1 left-0 h-0.5 bg-accent ${
                         location.pathname === link.path ? "w-full" : "w-0"
                       }`}
-                      initial={{ width: location.pathname === link.path ? "100%" : "0%" }}
-                      animate={{ width: location.pathname === link.path ? "100%" : "0%" }}
+                      initial={{
+                        width: location.pathname === link.path ? "100%" : "0%",
+                      }}
+                      animate={{
+                        width: location.pathname === link.path ? "100%" : "0%",
+                      }}
                       whileHover={{ width: "100%" }}
-                      transition={{ duration: 0.3 }}
-                    ></motion.span>
+                      transition={{ duration: 0.3 }}></motion.span>
                   </Link>
                 </motion.div>
               ))}

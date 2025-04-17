@@ -6,6 +6,7 @@ import {
   FaTwitter,
   FaLinkedinIn,
   FaInstagram,
+  FaWhatsapp,
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -20,7 +21,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">
               <span className="text-white">Innovoid</span>
-              <span className="text-accent">Labs</span>
+              <span className="text-accent">labs</span>
             </h3>
             <p className="text-gray-300 mb-4">
               Transforming ideas into innovative digital solutions. Your vision,
@@ -54,6 +55,13 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="bg-primary hover:bg-accent transition-colors w-8 h-8 rounded-full flex items-center justify-center">
                 <FaInstagram />
+              </a>
+              <a
+                href="https://wa.me/919344853263"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-600 hover:bg-green-700 transition-colors w-8 h-8 rounded-full flex items-center justify-center">
+                <FaWhatsapp />
               </a>
             </div>
           </div>
@@ -149,25 +157,27 @@ const Footer = () => {
               <li className="flex items-start">
                 <FiMapPin className="text-accent mt-1 mr-3 flex-shrink-0" />
                 <span className="text-gray-300">
-                  123 Innovation Street, Tech Hub,
+                  99, Sri Ram Nagar,
                   <br />
-                  Silicon Valley, CA 94043
+                  Narasimhanaickenpalayam,
+                  <br />
+                  Coimbatore 641031, India
                 </span>
               </li>
               <li className="flex items-center">
                 <FiPhone className="text-accent mr-3 flex-shrink-0" />
                 <a
-                  href="tel:+1234567890"
+                  href="tel:+919344853263"
                   className="text-gray-300 hover:text-accent transition-colors">
-                  +1 (234) 567-890
+                  +91 9344 853 263
                 </a>
               </li>
               <li className="flex items-center">
                 <FiMail className="text-accent mr-3 flex-shrink-0" />
                 <a
-                  href="mailto:info@innovoidlabs.com"
+                  href="mailto:info@nnovoidlabs.com"
                   className="text-gray-300 hover:text-accent transition-colors">
-                  info@innovoidlabs.com
+                  info@nnovoidlabs.com
                 </a>
               </li>
             </ul>
@@ -180,7 +190,7 @@ const Footer = () => {
         <div className="container-custom py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © {currentYear} InnovoidLabs. All rights reserved.
+              © {currentYear} nnovoid labs. All rights reserved.
             </p>
             <div className="flex space-x-4 mt-4 md:mt-0">
               <Link

@@ -9,6 +9,8 @@ import {
   FiHeart,
   FiCheckCircle,
 } from "react-icons/fi";
+import AboutCompanyImage from "../assets/images/stock/about-company.svg";
+import TeamImage from "../assets/images/stock/team.svg";
 
 // Animation variants
 const fadeIn = {
@@ -108,13 +110,12 @@ const About = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}>
-                <div className="h-96 bg-gray-200 rounded-lg overflow-hidden relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20"></div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-4xl font-bold text-white text-opacity-70">
-                      Company Image
-                    </span>
-                  </div>
+                <div className="h-96 rounded-lg overflow-hidden relative shadow-xl">
+                  <img
+                    src={AboutCompanyImage}
+                    alt="Innovoid Labs company"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-accent rounded-lg"></div>
               </motion.div>
@@ -231,12 +232,19 @@ const About = () => {
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
               variants={fadeIn}>
-              <h2 className="heading-lg mb-4">Meet Our Team</h2>
+              <h2 className="heading-lg mb-4">Our Team</h2>
               <p className="text-gray-600 text-lg">
-                Talented professionals passionate about creating innovative
-                solutions
+                Meet the talented professionals behind our innovative solutions
               </p>
             </motion.div>
+
+            <div className="mb-12">
+              <img
+                src={TeamImage}
+                alt="Innovoid Labs team"
+                className="w-full max-w-4xl mx-auto h-auto rounded-lg shadow-lg"
+              />
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <TeamMember name="Alex Johnson" role="Founder & CEO" />

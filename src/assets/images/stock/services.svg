@@ -1,0 +1,19 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#0047AB" />
+  <rect x="50" y="50" width="700" height="500" fill="#ffffff" opacity="0.1" rx="10" ry="10" />
+  
+  <!-- Code symbols -->
+  <text x="150" y="150" font-family="Consolas, monospace" font-size="24" fill="#ffffff" opacity="0.7">&lt;/&gt;</text>
+  <text x="250" y="200" font-family="Consolas, monospace" font-size="24" fill="#ffffff" opacity="0.7">{code}</text>
+  <text x="350" y="250" font-family="Consolas, monospace" font-size="24" fill="#ffffff" opacity="0.7">function()</text>
+  <text x="200" y="300" font-family="Consolas, monospace" font-size="24" fill="#ffffff" opacity="0.7">const app = new App();</text>
+  <text x="300" y="350" font-family="Consolas, monospace" font-size="24" fill="#ffffff" opacity="0.7">api.get('/data')</text>
+  
+  <!-- Mobile device outline -->
+  <rect x="500" y="150" width="120" height="200" rx="10" ry="10" fill="#ffffff" opacity="0.3" />
+  <rect x="530" y="160" width="60" height="10" rx="5" ry="5" fill="#ffffff" opacity="0.5" />
+  <rect x="550" y="330" width="20" height="10" rx="5" ry="5" fill="#ffffff" opacity="0.5" />
+  
+  <text x="400" y="450" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#ffffff">Development Services</text>
+  <text x="400" y="500" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#ffffff">Web, mobile and software solutions</text>
+</svg> 

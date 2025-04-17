@@ -1,0 +1,26 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#0047AB" />
+  
+  <!-- Grid layout for portfolio items -->
+  <rect x="50" y="50" width="220" height="220" fill="#ffffff" opacity="0.2" rx="10" ry="10" />
+  <rect x="290" y="50" width="220" height="220" fill="#ffffff" opacity="0.3" rx="10" ry="10" />
+  <rect x="530" y="50" width="220" height="220" fill="#ffffff" opacity="0.2" rx="10" ry="10" />
+  
+  <rect x="50" y="290" width="220" height="220" fill="#ffffff" opacity="0.3" rx="10" ry="10" />
+  <rect x="290" y="290" width="220" height="220" fill="#ffffff" opacity="0.2" rx="10" ry="10" />
+  <rect x="530" y="290" width="220" height="220" fill="#ffffff" opacity="0.3" rx="10" ry="10" />
+  
+  <!-- Sample project icons -->
+  <circle cx="160" cy="160" r="50" fill="#6F00FF" opacity="0.7" />
+  <circle cx="400" cy="160" r="50" fill="#6F00FF" opacity="0.7" />
+  <circle cx="640" cy="160" r="50" fill="#6F00FF" opacity="0.7" />
+  <circle cx="160" cy="400" r="50" fill="#6F00FF" opacity="0.7" />
+  <circle cx="400" cy="400" r="50" fill="#6F00FF" opacity="0.7" />
+  <circle cx="640" cy="400" r="50" fill="#6F00FF" opacity="0.7" />
+  
+  <!-- Laptop outline in center -->
+  <rect x="335" y="385" width="130" height="80" fill="#ffffff" opacity="0.5" rx="5" ry="5" />
+  <rect x="325" y="465" width="150" height="10" fill="#ffffff" opacity="0.5" rx="5" ry="5" />
+  
+  <text x="400" y="550" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#ffffff">Portfolio Projects</text>
+</svg> 

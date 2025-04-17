@@ -1,0 +1,34 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#e5e5e5" />
+  
+  <!-- Map background -->
+  <rect x="50" y="50" width="700" height="500" fill="#ffffff" rx="10" ry="10" stroke="#cccccc" stroke-width="2" />
+  
+  <!-- Road network -->
+  <line x1="150" y1="150" x2="650" y2="150" stroke="#cccccc" stroke-width="5" />
+  <line x1="150" y1="250" x2="650" y2="250" stroke="#cccccc" stroke-width="5" />
+  <line x1="150" y1="350" x2="650" y2="350" stroke="#cccccc" stroke-width="3" />
+  <line x1="150" y1="450" x2="650" y2="450" stroke="#cccccc" stroke-width="4" />
+  
+  <line x1="200" y1="100" x2="200" y2="500" stroke="#cccccc" stroke-width="3" />
+  <line x1="350" y1="100" x2="350" y2="500" stroke="#cccccc" stroke-width="5" />
+  <line x1="500" y1="100" x2="500" y2="500" stroke="#cccccc" stroke-width="3" />
+  <line x1="600" y1="100" x2="600" y2="500" stroke="#cccccc" stroke-width="4" />
+  
+  <!-- Location pin -->
+  <circle cx="350" cy="250" r="12" fill="#ff4d4d" />
+  <circle cx="350" cy="250" r="5" fill="#ffffff" />
+  
+  <!-- Location label -->
+  <rect x="250" y="185" width="200" height="40" rx="5" ry="5" fill="#0047AB" />
+  <text x="350" y="210" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">nnovoid labs - Coimbatore</text>
+  
+  <!-- Compass -->
+  <circle cx="700" cy="100" r="30" fill="#ffffff" stroke="#cccccc" stroke-width="1" />
+  <text x="700" y="90" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">N</text>
+  <text x="700" y="115" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">S</text>
+  <text x="685" y="103" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">W</text>
+  <text x="715" y="103" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">E</text>
+  
+  <text x="400" y="550" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#555555">99, Sri Ram Nagar, Narasimhanaickenpalayam, Coimbatore 641031, India</text>
+</svg> 
