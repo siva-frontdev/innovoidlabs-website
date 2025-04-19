@@ -154,7 +154,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full fixed top-0 left-0 right-0 z-50 px-4 py-5">
+    <div className="fixed top-0 left-0 right-0 z-50 px-4 py-9">
       <motion.nav
         initial="hidden"
         animate="visible"
@@ -164,7 +164,7 @@ const Navbar = () => {
             ? "bg-white/90 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.05)] py-3"
             : "bg-gradient-to-r from-primary via-deepBlue to-midnight py-3"
         }`}>
-        <div className="container mx-auto px-6 lg:px-8">
+        <div className="w-[99%] sm:w-[100%] md:w-[95%] mx-auto px-9 lg:px-8">
           <div className="flex justify-between items-center">
             <motion.div
               variants={logoVariants}
@@ -175,7 +175,7 @@ const Navbar = () => {
                   <motion.img
                     src="/Innovoid-logo.jpg"
                     alt="Innovoid Labs Logo" 
-                    className={`h-10 md:h-10 object-cover rounded-full ${
+                    className={`h-10 md:h-10 object-cover rounded ${
                       scrolled ? "" : "filter brightness-150"
                     }`}
                     whileHover={{ scale: 1.05 }}
@@ -269,7 +269,7 @@ const Navbar = () => {
                 initial="hidden"
                 animate="visible"
                 exit="exit"
-                className={`md:hidden mt-4 rounded-2xl p-4 ${
+                className={`md:hidden mt-4 rounded-2xl p-7 ${
                   scrolled
                     ? "bg-white/90 backdrop-blur-md shadow-md"
                     : "bg-gradient-to-b from-deepBlue/90 to-midnight/90 backdrop-blur-md"

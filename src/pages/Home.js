@@ -142,7 +142,7 @@ const Home = () => {
         <title>Innovoid Labs | Innovative Software Solutions</title>
         <meta
           name="description"
-          content="Innovoid Labs is a cutting-edge software agency specializing in web development, mobile apps, UI/UX design, cloud solutions, and DevOps services."
+          content="Empowering Your Business with Custom Software Solutions. Leading Software Development Company in India Specializing in web development, mobile apps, UI/UX design, cloud solutions, and DevOps services."
         />
         <meta
           name="keywords"
@@ -604,7 +604,7 @@ const Home = () => {
 
         {/* How We Work Section */}
         <section className="section py-24 bg-gray-50 relative">
-          <div className="absolute top-0 right-0 w-72 h-72 bg-lavender/10 rounded-blob-2 -translate-y-1/4 translate-x-1/4"></div>
+          <div className="absolute top-0 right-20 w-72 h-72 bg-lavender/10 rounded-blob-2 -translate-y-1/4 translate-x-1/4"></div>
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-mint/10 rounded-blob -translate-x-1/4 translate-y-1/4"></div>
 
           <div className="container-custom max-w-[90%] lg:max-w-[85%] mx-auto px-8 relative z-10">

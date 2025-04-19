@@ -43,14 +43,14 @@ const Footer = () => {
                 <FaTwitter />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/innovoid-labs/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary hover:bg-accent transition-colors w-8 h-8 rounded-full flex items-center justify-center">
                 <FaLinkedinIn />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/innovoidlabs/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary hover:bg-accent transition-colors w-8 h-8 rounded-full flex items-center justify-center">
