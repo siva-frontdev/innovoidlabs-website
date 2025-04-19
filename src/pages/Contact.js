@@ -264,7 +264,7 @@ const Contact = () => {
                         </svg>
                       </a>
                       <a
-                        href="https://linkedin.com"
+                        href="https://www.linkedin.com/company/innovoid-labs/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-gray-100 hover:bg-primary hover:text-white transition-colors w-10 h-10 rounded-full flex items-center justify-center">

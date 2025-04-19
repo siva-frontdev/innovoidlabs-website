@@ -14,12 +14,14 @@ const Footer = () => {
 
   return (
     <footer className="bg-deepBlue text-white mt-auto">
+      
       {/* Main Footer */}
       <div className="container-custom pt-16 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
             <h3 className="text-xl font-bold mb-4">
+            
               <span className="text-white">Innovoid</span>
               <span className="text-accent">labs</span>
             </h3>
